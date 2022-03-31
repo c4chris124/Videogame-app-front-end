@@ -11,6 +11,8 @@ export const SEARCH_BY_NAME = "SEARCH_BY_NAME"
 export const LOADING_ACTION = "LOADING_ACTION"
 export const SEARCH_TEST = "SEARCH_TEST"
 
+const {REACT_APP_SERVER} = process.env
+
 export const getGames = () => async dispatch => {
     try {
         const res = await fetch(`${REACT_APP_SERVER}/api/videogames/`)
