@@ -1,0 +1,56 @@
+
+.selectdiv{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    float: left;
+    margin: 50px 33%;
+    min-width: 200px;
+    position: relative;
+}
+
+select::-ms-expand {
+    display: none;
+    }
+
+    .selectdiv ::after {
+        content: '<>';
+        font: 16px monospace;
+        color: #fff;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 11px;
+        
+        top: 18px;
+        padding: 0 0 2px;
+        border-bottom: 1px solid #999;
+
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .selectdiv select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 10px;
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        height: 50px;
+        float: right;
+        margin: 5px 0px;
+        padding: 0px 24px;
+        font-size: 16px;
+        font-family: var(--font-family);
+        text-align: left;
+        line-height: 1.75;
+        color: #fff;
+        background: var(--color-footer);
+        border: 2px solid var(--color-footer);
+        -ms-word-break: normal;
+        word-break: normal;
+        cursor: pointer;
+      }
